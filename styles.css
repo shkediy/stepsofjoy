@@ -79,16 +79,57 @@ a:hover {
 
 /* Header */
 .site-header {
-  padding: 1.5rem 0;
+  border-bottom: 1px solid rgba(28, 43, 51, 0.08);
+  background: rgba(248, 246, 242, 0.92);
+}
+
+.site-header-top {
+  padding: 1.35rem 0 1.25rem;
   border-bottom: 1px solid rgba(28, 43, 51, 0.06);
-  background: rgba(248, 246, 242, 0.85);
-  backdrop-filter: blur(8px);
 }
 
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.header-hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  background: #d4e8e8;
+}
+
+.header-hero-img {
+  width: 100%;
+  height: max(10.5rem, min(38vw, 21.25rem));
+  object-fit: cover;
+  object-position: center 42%;
+  display: block;
+}
+
+.header-photo-credit {
+  position: absolute;
+  right: max(0.5rem, var(--space));
+  bottom: 0.4rem;
+  margin: 0;
+  font-size: 0.6875rem;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+  line-height: 1.3;
+}
+
+.header-photo-credit a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.header-photo-credit a:hover {
+  color: #e8f7f7;
 }
 
 .logo {
