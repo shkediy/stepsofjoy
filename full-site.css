@@ -116,13 +116,17 @@ a:hover {
 
 .site-header .logo-img {
   flex-shrink: 0;
-  height: 4rem;
+  height: 3.25rem;
   width: auto;
-  max-height: 4rem;
-  max-width: min(48vw, 16rem);
+  max-height: 3.25rem;
+  max-width: 3.75rem;
   object-fit: contain;
   object-position: center left;
   display: block;
+  border: 0;
+  outline: none;
+  box-shadow: none;
+  background: transparent;
 }
 
 .site-header .logo-text {
@@ -384,7 +388,9 @@ a:hover {
 }
 
 .hero-media--logo {
-  background: var(--color-surface);
+  background: transparent;
+  border: none;
+  box-shadow: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -395,8 +401,12 @@ a:hover {
   max-width: min(100%, 30rem);
   height: auto;
   object-fit: contain;
-  padding: clamp(0.25rem, 1.5vw, 0.75rem);
+  padding: 0;
   display: block;
+  border: 0;
+  outline: none;
+  box-shadow: none;
+  background: transparent;
 }
 
 /* —— Sections —— */
