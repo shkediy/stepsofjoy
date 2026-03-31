@@ -154,9 +154,9 @@ a:hover {
 
 .logo-img {
   flex-shrink: 0;
-  height: clamp(3.35rem, 10vw, 5rem);
+  height: clamp(4.5rem, 14vw, 7rem);
   width: auto;
-  max-width: min(100%, 5.5rem);
+  max-width: min(100%, 9rem);
   object-fit: contain;
   object-position: center;
   display: block;
