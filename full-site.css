@@ -116,10 +116,10 @@ a:hover {
 
 .site-header .logo-img {
   flex-shrink: 0;
-  height: 3.25rem;
+  height: 3.5rem;
   width: auto;
-  max-height: 3.25rem;
-  max-width: 3.75rem;
+  max-height: 3.5rem;
+  max-width: 2.35rem;
   object-fit: contain;
   object-position: center left;
   display: block;
@@ -394,11 +394,15 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* Full artwork includes a border frame — do not clip corners */
+  border-radius: 0;
+  overflow: visible;
+  padding: clamp(0.5rem, 2vw, 1.25rem);
 }
 
 .hero-media--logo .hero-logo-img {
   width: 100%;
-  max-width: min(100%, 30rem);
+  max-width: min(100%, 34rem);
   height: auto;
   object-fit: contain;
   padding: 0;
