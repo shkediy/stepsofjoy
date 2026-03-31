@@ -152,14 +152,6 @@ a:hover {
   text-align: left;
 }
 
-.logo-icon {
-  flex-shrink: 0;
-  width: clamp(3rem, 9vw, 4.25rem);
-  height: clamp(3rem, 9vw, 4.25rem);
-  object-fit: contain;
-  display: block;
-}
-
 .logo-text {
   display: flex;
   flex-direction: column;
