@@ -114,21 +114,6 @@ a:hover {
   text-align: left;
 }
 
-.site-header .logo-img {
-  flex-shrink: 0;
-  height: 3.5rem;
-  width: auto;
-  max-height: 3.5rem;
-  max-width: 2.35rem;
-  object-fit: contain;
-  object-position: center left;
-  display: block;
-  border: 0;
-  outline: none;
-  box-shadow: none;
-  background: transparent;
-}
-
 .site-header .logo-text {
   display: flex;
   flex-direction: column;
