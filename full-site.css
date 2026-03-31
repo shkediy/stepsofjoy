@@ -114,6 +114,14 @@ a:hover {
   text-align: left;
 }
 
+.site-header .logo-icon {
+  flex-shrink: 0;
+  width: 2.35rem;
+  height: 2.35rem;
+  object-fit: contain;
+  display: block;
+}
+
 .site-header .logo-text {
   display: flex;
   flex-direction: column;
