@@ -606,6 +606,37 @@ a:hover {
   margin-bottom: 0;
 }
 
+.about-video {
+  margin: 2rem auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  line-height: 0;
+}
+
+.about-video-el {
+  display: block;
+  width: auto;
+  max-width: min(13.5rem, 64vw);
+  max-height: min(42vh, 22rem);
+  height: auto;
+  object-fit: contain;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(45, 138, 138, 0.12);
+  background: var(--color-bg-alt);
+}
+
+.about-video-caption {
+  margin: 0.65rem 0 0;
+  max-width: min(22rem, 90vw);
+  font-size: 0.875rem;
+  line-height: 1.45;
+  color: var(--color-ink-muted);
+  text-align: center;
+}
+
 /* Cards */
 .card-grid {
   display: grid;
