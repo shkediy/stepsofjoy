@@ -8,6 +8,7 @@
       content="Steps of Joy Pediatric Physical Therapy: pediatric PT in Bergen County, NJ with Ronit Shkedi, PT. Play-based, family-centered care."
     />
     <title>Steps of Joy Pediatric Physical Therapy</title>
+    <!-- Jane App online booking: https://stepsofjoypt.janeapp.com -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -50,11 +51,21 @@
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
             <li><a href="#visit">Visit options</a></li>
             <li><a href="#fees">Fees &amp; insurance</a></li>
             <li><a href="#approach">Our approach</a></li>
             <li><a href="#faq">FAQ</a></li>
-            <li><a href="#contact" class="nav-cta">Book / contact</a></li>
+            <li>
+              <a
+                href="https://stepsofjoypt.janeapp.com"
+                class="nav-cta"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Book online</a
+              >
+            </li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -75,7 +86,14 @@
               school, and at play.
             </p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#contact">Request an evaluation</a>
+              <a
+                class="btn btn-primary"
+                href="https://stepsofjoypt.janeapp.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Book online</a
+              >
+              <a class="btn btn-ghost" href="#contact">Contact</a>
               <a class="btn btn-ghost" href="#services">Explore services</a>
             </div>
           </div>
@@ -142,20 +160,45 @@
               nearby communities.
             </p>
             <figure class="about-video">
-              <video
-                class="about-video-el"
-                controls
-                playsinline
-                preload="metadata"
-                width="1080"
-                height="1920"
-                aria-label="Welcome video introducing Steps of Joy Pediatric Physical Therapy"
+              <button
+                type="button"
+                class="about-video-open"
+                id="welcome-video-open"
+                aria-haspopup="dialog"
+                aria-controls="welcome-video-dialog"
+                aria-label="Play welcome video"
               >
-                <source src="videos/welcome.mp4" type="video/mp4" />
-                <a href="videos/welcome.mp4">Download the welcome video (MP4)</a>
-              </video>
+                <img
+                  class="about-video-poster"
+                  src="images/welcome-poster.jpg"
+                  width="1080"
+                  height="1920"
+                  alt=""
+                  decoding="async"
+                  loading="lazy"
+                  draggable="false"
+                />
+                <span class="about-video-play" aria-hidden="true">
+                  <svg
+                    class="about-video-play-icon"
+                    width="56"
+                    height="56"
+                    viewBox="0 0 56 56"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    focusable="false"
+                  >
+                    <circle cx="28" cy="28" r="28" fill="#fff" fill-opacity="0.94" />
+                    <path
+                      d="M22 17L41 28L22 39V17Z"
+                      fill="currentColor"
+                      class="about-video-play-triangle"
+                    />
+                  </svg>
+                </span>
+              </button>
               <figcaption class="about-video-caption">
-                A short welcome from our practice.
+                Click or tap the image to watch a short welcome from our practice.
               </figcaption>
             </figure>
           </div>
@@ -222,6 +265,151 @@
         </div>
       </section>
 
+      <section id="gallery" class="section">
+        <div class="container">
+          <h2 class="section-title">Gallery</h2>
+          <p class="section-intro">
+            A glimpse of playful therapy, our team, and the energy we bring to
+            each session.
+          </p>
+          <ul class="gallery-grid" role="list">
+            <li>
+              <button
+                type="button"
+                class="gallery-thumb"
+                aria-label="Open larger: gallery photo 1 of 7"
+              >
+                <span class="gallery-thumb-inner">
+                  <img
+                    src="images/gallery/thumbs/gallery-01.jpeg"
+                    width="900"
+                    height="1200"
+                    data-full-src="images/gallery/gallery-01.jpeg"
+                    alt="Pediatric physical therapy at Steps of Joy — photo 1"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </span>
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="gallery-thumb"
+                aria-label="Open larger: gallery photo 2 of 7"
+              >
+                <span class="gallery-thumb-inner">
+                  <img
+                    src="images/gallery/thumbs/gallery-02.jpeg"
+                    width="900"
+                    height="1200"
+                    data-full-src="images/gallery/gallery-02.jpeg"
+                    alt="Pediatric physical therapy at Steps of Joy — photo 2"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </span>
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="gallery-thumb"
+                aria-label="Open larger: gallery photo 3 of 7"
+              >
+                <span class="gallery-thumb-inner">
+                  <img
+                    src="images/gallery/thumbs/gallery-03.jpeg"
+                    width="900"
+                    height="675"
+                    data-full-src="images/gallery/gallery-03.jpeg"
+                    alt="Pediatric physical therapy at Steps of Joy — photo 3"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </span>
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="gallery-thumb"
+                aria-label="Open larger: gallery photo 4 of 7"
+              >
+                <span class="gallery-thumb-inner">
+                  <img
+                    src="images/gallery/thumbs/gallery-04.jpeg"
+                    width="900"
+                    height="1200"
+                    data-full-src="images/gallery/gallery-04.jpeg"
+                    alt="Pediatric physical therapy at Steps of Joy — photo 4"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </span>
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="gallery-thumb"
+                aria-label="Open larger: gallery photo 5 of 7"
+              >
+                <span class="gallery-thumb-inner">
+                  <img
+                    src="images/gallery/thumbs/gallery-05.jpeg"
+                    width="900"
+                    height="1200"
+                    data-full-src="images/gallery/gallery-05.jpeg"
+                    alt="Pediatric physical therapy at Steps of Joy — photo 5"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </span>
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="gallery-thumb"
+                aria-label="Open larger: gallery photo 6 of 7"
+              >
+                <span class="gallery-thumb-inner">
+                  <img
+                    src="images/gallery/thumbs/gallery-06.jpeg"
+                    width="900"
+                    height="1200"
+                    data-full-src="images/gallery/gallery-06.jpeg"
+                    alt="Pediatric physical therapy at Steps of Joy — photo 6"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </span>
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="gallery-thumb"
+                aria-label="Open larger: gallery photo 7 of 7"
+              >
+                <span class="gallery-thumb-inner">
+                  <img
+                    src="images/gallery/thumbs/gallery-07.jpeg"
+                    width="900"
+                    height="1200"
+                    data-full-src="images/gallery/gallery-07.jpeg"
+                    alt="Pediatric physical therapy at Steps of Joy — photo 7"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <section id="visit" class="section section-alt">
         <div class="container narrow">
           <h2 class="section-title">Visit options</h2>
@@ -234,9 +422,16 @@
             that work for your family. When you reach out, we’ll explain what
             each option looks like and what to expect at the first visit.
           </p>
-          <p>
-            <a class="btn btn-primary" href="#contact">Ask about scheduling</a>
-          </p>
+          <div class="action-row">
+            <a
+              class="btn btn-primary"
+              href="https://stepsofjoypt.janeapp.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Book online</a
+            >
+            <a class="btn btn-ghost" href="#contact">Contact</a>
+          </div>
         </div>
       </section>
 
@@ -251,8 +446,8 @@
               coverage.
             </p>
             <p>
-              <strong>Contact us</strong> for current rates and to discuss what works
-              for your plan.
+              <strong><a href="#contact" class="fees-contact-link">Contact us</a></strong>
+              for current rates and to discuss what works for your plan.
             </p>
           </div>
         </div>
@@ -310,45 +505,62 @@
       </section>
 
       <section id="contact" class="section section-cta">
-        <div class="container contact-box">
-          <div class="contact-copy">
-            <h2 class="section-title">Get in touch</h2>
-            <p>
-              Ready to learn more or book an evaluation? We’d love to hear
-              about your child and answer your questions.
-            </p>
+        <div class="container">
+          <h2 class="section-title">Get in touch</h2>
+          <div class="contact-box">
+            <div class="contact-book" id="book-online">
+              <h3 class="contact-block-title">Book online</h3>
+              <p class="contact-block-lead">
+                Request or manage appointments through our secure Jane booking
+                page (opens in a new tab).
+              </p>
+              <a
+                class="btn btn-on-cta"
+                href="https://stepsofjoypt.janeapp.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Book online</a
+              >
+            </div>
+            <div class="contact-direct">
+              <h3 class="contact-block-title">Contact</h3>
+              <p class="contact-block-lead">
+                Prefer phone or email? We’d love to hear about your child and
+                answer your questions.
+              </p>
+              <dl class="contact-details">
+                <div>
+                  <dt>Phone</dt>
+                  <dd><a href="tel:+12016824652">(201) 682-4652</a></dd>
+                </div>
+                <div>
+                  <dt>Email</dt>
+                  <dd>
+                    <a href="mailto:ronit@stepsofjoypt.com">ronit@stepsofjoypt.com</a>
+                  </dd>
+                </div>
+                <div>
+                  <dt>Location</dt>
+                  <dd>
+                    <a
+                      href="https://www.google.com/maps/search/?api=1&amp;query=175%20Washington%20Ave%2C%20Dumont%2C%20NJ%2007628"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >175 Washington Ave., Dumont, NJ 07628</a><br />
+                    <a
+                      href="https://www.google.com/maps/search/?api=1&amp;query=15%20Franklin%20St%2C%20Tenafly%2C%20NJ%2007670"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >15 Franklin St., Tenafly, NJ 07670</a>
+                  </dd>
+                </div>
+                <div>
+                  <dt>Hours</dt>
+                  <dd>By appointment. Ask when you call or email</dd>
+                </div>
+              </dl>
+            </div>
           </div>
-          <dl class="contact-details">
-            <div>
-              <dt>Phone</dt>
-              <dd><a href="tel:+12016824652">(201) 682-4652</a></dd>
-            </div>
-            <div>
-              <dt>Email</dt>
-              <dd>
-                <a href="mailto:ronit@stepsofjoypt.com">ronit@stepsofjoypt.com</a>
-              </dd>
-            </div>
-            <div>
-              <dt>Location</dt>
-              <dd>
-                <a
-                  href="https://www.google.com/maps/search/?api=1&amp;query=175%20Washington%20Ave%2C%20Dumont%2C%20NJ%2007628"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >175 Washington Ave., Dumont, NJ 07628</a><br />
-                <a
-                  href="https://www.google.com/maps/search/?api=1&amp;query=15%20Franklin%20St%2C%20Tenafly%2C%20NJ%2007670"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >15 Franklin St., Tenafly, NJ 07670</a>
-              </dd>
-            </div>
-            <div>
-              <dt>Hours</dt>
-              <dd>By appointment. Ask when you call or email</dd>
-            </div>
-          </dl>
         </div>
       </section>
     </main>
@@ -360,6 +572,87 @@
         </p>
       </div>
     </footer>
+
+    <div
+      id="welcome-video-dialog"
+      class="video-lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Welcome video"
+      hidden
+    >
+      <div class="video-lightbox-backdrop" tabindex="-1"></div>
+      <div class="video-lightbox-panel">
+        <button
+          type="button"
+          class="video-lightbox-close"
+          aria-label="Close video"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <video
+          id="welcome-video-player"
+          class="video-lightbox-video"
+          controls
+          playsinline
+          preload="metadata"
+          poster="images/welcome-poster.jpg"
+          width="1080"
+          height="1920"
+          src="videos/welcome.mp4"
+        >
+          <a href="videos/welcome.mp4">Download the welcome video (MP4)</a>
+        </video>
+      </div>
+    </div>
+
+    <div
+      id="gallery-lightbox"
+      class="gallery-lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Enlarged gallery photo"
+      hidden
+    >
+      <div class="gallery-lightbox-backdrop" tabindex="-1"></div>
+      <div class="gallery-lightbox-frame">
+        <button
+          type="button"
+          class="gallery-lightbox-close"
+          aria-label="Close gallery"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <button
+          type="button"
+          class="gallery-nav gallery-nav-prev"
+          aria-label="Previous image"
+        >
+          <span aria-hidden="true">&lsaquo;</span>
+        </button>
+        <button
+          type="button"
+          class="gallery-nav gallery-nav-next"
+          aria-label="Next image"
+        >
+          <span aria-hidden="true">&rsaquo;</span>
+        </button>
+        <figure class="gallery-lightbox-figure">
+          <img
+            id="gallery-lightbox-img"
+            class="gallery-lightbox-img"
+            src="images/gallery/thumbs/gallery-01.jpeg"
+            width="900"
+            height="1200"
+            alt=""
+          />
+          <figcaption
+            id="gallery-lightbox-caption"
+            class="gallery-lightbox-caption"
+          ></figcaption>
+        </figure>
+      </div>
+    </div>
 
     <script src="main.js" defer></script>
   </body>
